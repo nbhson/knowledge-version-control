@@ -42,18 +42,18 @@ Tạo nhánh mới và switch sang nhánh mới luôn
 Gộp những thay đổi từ branch phụ vào branch chính
 Master sẽ được chạy tới commit mới nhất nếu branch checkout từ master
 
-!['fast forward'](../img/image_2022_06_30T01_54_35_619Z.png)
+!['fast forward'](../workflow/image_2022_06_30T01_54_35_619Z.png)
 
 ### merge no fast forward
 > git merge "tên branch" --no-ff
 
-!['no fast forward'](../img/imgpsh_fullsize_anim-nff-1.png)
-!['no fast forward'](../img/imgpsh_fullsize_anim-nff-2.png)
+!['no fast forward'](../workflow/imgpsh_fullsize_anim-nff-1.png)
+!['no fast forward'](../workflow/imgpsh_fullsize_anim-nff-2.png)
 
 
 Merge branch 'add-info' of https://github.com/nbhson433/git-tutorial into add-info
 > Nếu từ master mà merge một nhánh không phải checkout từ master (hoặc là khác history) thì nó sẽ tạo ra 1 cái "commit merge"
 
-!['merge'](../img/imgpsh_fullsize_anim.png)
+!['merge'](../workflow/imgpsh_fullsize_anim.png)
 
 Git learning: <https://learngitbranching.js.org/>

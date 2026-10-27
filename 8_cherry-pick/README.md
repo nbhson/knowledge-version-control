@@ -11,8 +11,8 @@
 > git cherry-pick <commit-hash-1> <commit-hash-2> <commit-hash-3>
 > git cherry-pick <commit-hash-1>..<commit-hash-3>
 
-!['cherry pick 1'](../img/crp-1.png)
-!['cherry pick 2'](../img/crp-2.png)
+!['cherry pick 1'](../workflow/crp-1.png)
+!['cherry pick 2'](../workflow/crp-2.png)
 
 
 > cherry-pick 1 commit thì lấy đúng hash code của commit đó

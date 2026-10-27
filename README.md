@@ -40,7 +40,7 @@ Code change (working directory)
 > git commit
 Để đưa những thay đổi ở staging area vào repository
 
-!['Staging area'](img/index1@2x.png)
+!['Staging area'](workflow/index1@2x.png)
 
 > git commit --amend
 Thay đổi message commit
