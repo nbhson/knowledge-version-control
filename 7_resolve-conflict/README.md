@@ -8,9 +8,8 @@
 -> fix conflicts
 
 > git add .
-> git commit -m "nội dung"
 > git rebase --continue
-> git push orgin -f "nhánh phụ"
+> git push --force-with-lease "nhánh phụ"
 
 > git checkout "nhánh chính"
 > git merge "nhánh phụ"

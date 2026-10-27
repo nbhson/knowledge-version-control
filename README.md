@@ -1,7 +1,7 @@
 # Git là gì?
 
 ## Repo (repository)
-- Là một dự chứa toàn bộ source code của dự án.
+- Là một nơi chứa toàn bộ source code của dự án.
 - Repo có 2 loại (repo dùng để theo dõi lịch sử, mỗi repo là 1 project):
   + `Local repo`: trong máy
   + `Remote repo`: nằm trên máy chủ (có thể pull, push)
@@ -9,7 +9,7 @@
 
 ## Workflow
 - Working directory: thư mục làm việc, nơi xảy ra những thay đổi trong file
-- Stating area: Khi `git add` thì những file ở working directory sẽ được add vào stating area này
+- Staging area: Khi `git add` thì những file ở working directory sẽ được add vào staging area này
 - Local repo: những thay đổi ở staging area sẽ được đưa vào local repo khi `git commit`
 - Remote repo: được dùng để đồng bộ những thay đổi ở local lên remote bằng `git push`, hoặc đồng bộ từ remote về local thì dùng `git pull`
 
@@ -32,10 +32,10 @@ Code change (working directory)
 Để tạo một git ở local, có thể thay đổi thông tin trong .git/config như username, email,...
 
 > git status
-Để xem sự thay đổi trên local repo, bao gồm file trong working directory, file trong stating,....
+Để xem sự thay đổi trên local repo, bao gồm file trong working directory, file trong staging,...
 
 > git add
-Để đưa những thay đổi ở working dir vào stating area
+Để đưa những thay đổi ở working dir vào staging area
 
 > git commit
 Để đưa những thay đổi ở staging area vào repository
@@ -47,6 +47,8 @@ Thay đổi message commit
 
 > git push --force
 Ghi đè lịch sử  lên remote. **Không nên sử dụng**
+
+> ⚠️ Nếu buộc phải force push (ví dụ sau rebase), dùng `git push --force-with-lease` thay vì `--force`. `--force-with-lease` từ chối ghi đè nếu có commit mới hơn trên remote — an toàn hơn.
 
 > git log
 

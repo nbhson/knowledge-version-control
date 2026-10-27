@@ -16,11 +16,21 @@ Loại bỏ file change ra khỏi state về directory
 Dùng để unstate file
 
 > git reset --soft "commitId"
-Dùng để để revert commit (quay về staging area)
+Dùng để revert commit (quay về staging area)
 
 > git reset "commitId"
 > git reset --mixed "commitId" (DEFAULT)
-Dùng để để revert commit (quay về working dir)
+Dùng để revert commit (quay về working dir)
 
 >git reset --hard "commitId"
-Dùng để để revert commit **REMOVE COMMIT + MẤT LUÔN CODE CŨ**
+Dùng để revert commit **REMOVE COMMIT + MẤT LUÔN CODE CŨ**
+
+## Cứu lại commit sau reset --hard
+
+```bash
+git reflog                    # xem lịch sử mọi thao tác
+git checkout <commit-hash>    # quay lại trạng thái trước
+git branch backup             # tạo branch backup trước khi reset
+```
+
+Ref: https://git-scm.com/docs/git-reflog
